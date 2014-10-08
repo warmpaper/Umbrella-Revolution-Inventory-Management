@@ -1,0 +1,45 @@
+District
+    districtId
+    districtName        (cwb, mk, admiralty)
+    description
+    lat
+    lng
+Station
+    stationId
+    stationName         (cwb01, mk02)
+    description
+    lat
+    lng
+    districtId
+ItemCat
+    catId
+    catName             (food, drinks, tools...)
+    imgUrl
+Item
+    itemId
+    itemName            (umbrella, energy bar)
+    catId
+    imgUrl
+DistrictItemCat
+    id
+    catId
+    level               (0-shortage, 1-enough, 2-excessive)
+    districtId
+DistrictItem
+    id
+    itemId
+    description         
+    level               (0-shortage, 1-enough, 2-excessive)
+    districtId
+User
+    userId
+    username
+    password
+    role                (admin, helper, driver)
+    districtId
+News
+    newsId
+    description
+    time
+    districtId
+    userId
